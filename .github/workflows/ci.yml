@@ -1,8 +1,11 @@
 name: Build and Deploy
+
 on: 
   push:
     branches:
       - main
+  workflow_dispatch:  # 👉 这个就是添加“手动运行”的触发器
+
 jobs:
   build-and-deploy:
     name: Deploy Job
